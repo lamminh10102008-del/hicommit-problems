@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-int main()
-  {
+int main() {
     int t;
-    scanf("%d", &t);
-
-    if (t < 15) {
-        printf("MAT\n");
-    } else if (t < 25) {
-        printf("MAT\n");
-    } else if (t < 35) {
-        printf("NONG\n");
-    } else {
-        printf("RAT_NONG\n");
+    // Đọc dữ liệu đầu vào
+    if (scanf("%d", &t) == 1) {
+        if (t < 15) {
+            printf("LANH\n");
+        } else if (t < 25) {
+            printf("MAT\n");
+        } else if (t < 35) {
+            printf("NONG\n");
+        } else {
+            printf("RAT_NONG\n");
+        }
     }
-
     return 0;
 }
