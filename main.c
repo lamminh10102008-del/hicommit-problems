@@ -1,11 +1,11 @@
-// HICOMMIT TEMPLATE FOR C
-#include <stdio.h>
+#include <stdio.h> // Thư viện nhập/xuất chuẩn
 
 int main() {
-    
-    /*
-        Your code goes here. Happy coding!
-    */
-
+    int x;
+    printf("Nhập một số nguyên: ");
+    scanf("%d", &x);
+    printf("Số bạn vừa nhập là: %d\n", x);
     return 0;
 }
+
+
