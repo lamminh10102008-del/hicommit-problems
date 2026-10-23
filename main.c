@@ -3,15 +3,15 @@
 int main() {
     double w, h;
     
-    if (scanf("%lf %lf", &w, &h) == 2) {
-        double h_m = h / 100.0;
-        double bmi = w / (h_m * h_m);
+    while (scanf("%lf %lf", &w, &h) == 2) {
+        // Biến đổi so sánh nhân chéo để tránh sai số số thực:
+        // BMI = w * 10000 / (h * h)
         
-        if (bmi < 18.5) {
+        if (w * 10000.0 < 18.5 * h * h) {
             printf("UNDERWEIGHT\n");
-        } else if (bmi < 25.0) {
+        } else if (w * 10000.0 < 25.0 * h * h) {
             printf("NORMAL\n");
-        } else if (bmi < 30.0) {
+        } else if (w * 10000.0 < 30.0 * h * h) {
             printf("OVERWEIGHT\n");
         } else {
             printf("OBESE\n");
