@@ -6,11 +6,11 @@ int main() {
     int moc[] = {400, 300, 200, 100, 50, 0};
     int gia[] = {2927, 2834, 2536, 2014, 1734, 1678};
 
-     tong_tien = 0;
+    long long tong_tien = 0;
 
     for (int i = 0; i < 6; i++) {
         if (k > moc[i]) {
-            tong_tien += (tong_tien)(k - moc[i]) * gia[i];
+            tong_tien += (long long)(k - moc[i]) * gia[i];
             k = moc[i];
     }
     }
