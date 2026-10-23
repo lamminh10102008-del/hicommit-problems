@@ -9,7 +9,10 @@ int main() {
 
     int tong_tien = 0;
 
-
+    for (int i = 1; i < 6; i++) {
+        if (k > moc[i]) {
+            tong_tien += (int )(k - moc[i]) * gia[i];
+            k = moc[i];
         }
     }
 
