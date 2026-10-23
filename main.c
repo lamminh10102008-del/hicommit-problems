@@ -7,7 +7,7 @@ int main() {
     int moc[] = {400, 300, 200, 100, 50, 0};
     int gia[] = {2927, 2834, 2536, 2014, 1734, 1678};
 
-    long long tong_tien = 0;
+    int tong_tien = 0;
 
 
         }
