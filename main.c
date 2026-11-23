@@ -9,11 +9,11 @@ int main()
   }
   else if(d<=5)
   {
-    tien=d*1* 15000 + (d-1) *13000;
+    tien=1* 15000 + (d-1) *13000;
   }
   else
   {
-    tien=d*1*15000 + 4*13000 + (d-5 ) *11000;
+    tien=1*15000 + 4*13000 + (d-5 ) *11000;
   }
    printf("%lld\n", (long long)tien);
   
