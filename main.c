@@ -5,17 +5,17 @@ int main() {
     scanf("%lf", &diem);
 
     if (diem < 0 || diem > 10) {
-        printf("Diem khong hop le");
+        printf("FAIL_ATTENDANCE");
     } else if (diem >= 9.0) {
-        printf("Xuat sac");
+        printf("FAIL_SUBJECT");
     } else if (diem >= 8.0) {
-        printf("Gioi");
+        printf("EXCELLENT");
     } else if (diem >= 6.5) {
-        printf("Kha");
+        printf("GOOD");
     } else if (diem >= 5.0) {
-        printf("Trung binh");
+        printf("PASS");
     } else {
-        printf("Yeu");
+        printf("FAIL");
     }
 
     return 0;
