@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-int main()
-{
+int laNamNhuan(int y) {
+    if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
+        return 1;
+    }
+    return 0;
+}
 
 int soNgayTrongThang(int m, int y) {
     switch (m) {
@@ -10,7 +14,7 @@ int soNgayTrongThang(int m, int y) {
         case 4: case 6: case 9: case 11:
             return 30;
         case 2:
-            return (y) ? 29 : 28;
+            return laNamNhuan(y) ? 29 : 28;
         default:
             return 0;
     }
@@ -33,3 +37,4 @@ int main() {
 
     return 0;
 }
+
