@@ -1,24 +1,36 @@
 #include <stdio.h>
 
-int main() {
-    double diem;
-    scanf("%lf", &diem);
-
-    if (diem < 0 || diem > 10) {
-        printf("FAIL_ATTENDANCE");
-    } else if (diem >= 9.0) {
-        printf("FAIL_SUBJECT");
-    } else if (diem >= 8.0) {
-        printf("EXCELLENT");
-    } else if (diem >= 6.5) {
-        printf("GOOD");
-    } else if (diem >= 5.0) {
-        printf("PASS");
-    } else {
-        printf("FAIL");
+int main() 
+{
+  int abs;
+  float gpa, min;
+  scanf("%f%f%d", &gpa, &min, &abs);
+  if(abs>3.0)
+  {
+    printf("FAIL_ATTENDANCE");
+  }
+  else
+  {
+    if(min<4.0)
+    {
+      printf("FAIL_SUBJECT");
     }
-
-    return 0;
+    else if(gpa>=8.0 && min>=7.0)
+    {
+      printf("EXCELLENT");
+    }
+    else if(gpa>=6.5 && min>=5.0)
+    {
+      printf("GOOD");
+    }
+    else if(gpa>=5.0 && min>=4.0)
+    {
+      printf("PASS");
+    }
+    else
+    {
+      printf("FAIL");
+    }
+  }
+  return 0;
 }
-
-
