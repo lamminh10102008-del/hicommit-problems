@@ -1,11 +1,7 @@
 #include <stdio.h>
 
-int main (int y) {
-    if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
-        return 1;
-    }
-    return 0;
-}
+int main()
+{
 
 int soNgayTrongThang(int m, int y) {
     switch (m) {
