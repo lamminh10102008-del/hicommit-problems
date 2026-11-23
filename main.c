@@ -1,21 +1,26 @@
 #include <stdio.h>
 int main()
 {
-  double d; tien
-  scanf("%lf", &d);
-  if(d<=1)
-  {
-    (long int)tien=d*15000;
-  }
-  else if( d>1 || d<=5)
-  {
-    (long int)tien=d*1* 15000 + (d − 1) *13000;
-  }
-  else if (d > 5)
-  {
-    (long int)tien=d*1*15000 + 4*13000 + (d − 5) *11000
-  }
-  printf("%ld", tien\n);
-  
-  return 0;
+  double d;
+    if (scanf("%lf", &d) != 1)
+	 {
+        return 0;
+    }
+
+    double tien = 0.0;
+
+    if (d <= 1.0)
+	 {
+        tien = d * 15000.0;
+    } else if (d <= 5.0) 
+	{
+        tien = 1.0 * 15000.0 + (d - 1.0) * 13000.0;
+    } else
+	 {
+        tien = 1.0 * 15000.0 + 4.0 * 13000.0 + (d - 5.0) * 11000.0;
+    }
+
+    printf("%lld\n", (long long)tien);
+
+    return 0;
 }
