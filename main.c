@@ -13,7 +13,7 @@ int main()
   }
   else
   {
-    tien=d*1*15000 + 4*13000 + (d − 5) *11000
+    tien=d*1*15000 + 4*13000 + (d − 5) *11000;
   }
    printf("%lld\n", (long long)tien);
   
