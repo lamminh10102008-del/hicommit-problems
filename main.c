@@ -14,7 +14,7 @@ int soNgayTrongThang(int m, int y) {
         case 4: case 6: case 9: case 11:
             return 30;
         case 2:
-            return laNamNhuan(y) ? 29 : 28;
+            return (y) ? 29 : 28;
         default:
             return 0;
     }
