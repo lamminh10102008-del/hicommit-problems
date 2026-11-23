@@ -27,14 +27,13 @@ int main() {
     if (y > 0 && m >= 1 && m <= 12) {
         int maxD = daysInMonth(m, y);
         if (d >= 1 && d <= maxD) {
-            printf("Valid");
+            printf("VALID");
         } else {
-            printf("Invalid");
+            printf("INVALID");
         }
     } else {
-        printf("Invalid");
+        printf("INVALID");
     }
 
     return 0;
 }
-
